@@ -14,19 +14,17 @@ export const Projects = () => {
       title: "Project 1",
       description: "Design & Development",
       githubLink: "https://github.com/Mun-Min/Project_One",
-      imgUrl: projImg1,
+      // imgUrl: projImg1,
     },
     {
       title: "Project 2",
       description: "Design & Development",
       githubLink: "https://github.com/Mun-Min/Project_Two",
-      imgUrl: projImg2,
     },
     {
       title: "Project 3",
       description: "Design & Development",
       githubLink: "https://github.com/Mun-Min/Project_3",
-      imgUrl: projImg3,
     },
   ];
 
