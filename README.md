@@ -8,3 +8,5 @@ Built using:
 - CSS framework: React-bootstrap
 - CSS animations library: Animate.css
 
+
+LINK TO MY PERSONAL PORTFOLIO --> https://virtual-portfolio.netlify.app/
