@@ -10,3 +10,6 @@ Built using:
 
 
 LINK TO MY PERSONAL PORTFOLIO --> https://virtual-portfolio.netlify.app/
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/56726bb9-3b97-4ac8-afab-26b4bcbd7b78/deploy-status)](https://app.netlify.com/sites/virtual-portfolio/deploys)

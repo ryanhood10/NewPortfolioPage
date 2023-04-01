@@ -14,7 +14,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [ "Aspiring Data Analyst", "Software Developer", "Web Developer" ];
-  const period = 5000;
+  const period = 500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -43,7 +43,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(600);
+      setDelta(500);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -58,8 +58,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Munqiz Minhas`} <span className="txt-rotate" dataPeriod="900" data-rotate='[ "Aspiring Data Analyst", "Software Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Data Analyst with a certificate in Fintech from Arizona State University and skills in Python,
+                <h1>{`Hi! I'm Munqiz Minhas `} <span className="txt-rotate" dataPeriod="100" data-rotate='[ "Aspiring Data Analyst", "Software Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Data Analyst with a certificate in Fintech from Arizona State University and skilled in Python,
                     Pandas, and Machine Learning. Proven technical and leadership aptitude in data analysis and
                     financial modeling and forecasting. Qualifications encompass collaborating across teams to
                     define needs, evaluate risks and issues, and implement solutions. Enjoys leveraging background
