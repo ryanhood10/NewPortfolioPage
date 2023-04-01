@@ -43,7 +43,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(400);
+      setDelta(600);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
