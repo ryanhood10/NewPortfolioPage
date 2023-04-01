@@ -43,7 +43,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(900);
+      setDelta(100);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -58,7 +58,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Munqiz Minhas `} <span className="txt-rotate" dataPeriod="150" data-rotate='[ "Aspiring Data Analyst", "Software Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Munqiz Minhas `} <span className="txt-rotate" dataPeriod="400" data-rotate='[ "Aspiring Data Analyst", "Software Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Data Analyst with a certificate in Fintech from Arizona State University and skilled in Python,
                     Pandas, and Machine Learning. Proven technical and leadership aptitude in data analysis and
                     financial modeling and forecasting. Qualifications encompass collaborating across teams to
