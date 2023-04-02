@@ -15,7 +15,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(250); // set delta to a constant value
   const [index, setIndex] = useState(1);
   const toRotate = [ "Aspiring Data Analyst", "Software Developer", "Web Developer" ];
-  const period = 1000;
+  const period = 350;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -44,7 +44,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(1000);
+      setDelta(250);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
