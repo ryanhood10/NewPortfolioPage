@@ -308,34 +308,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
-/* .isVisible { 
-  will-change: transform;
-} */
-/* .txt-rotate {
-  will-change: transform;
-  overflow: hidden;
-} */
 
-.animate {
-  opacity: 0;
+.txt-rotate {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.66s ease-out;
+} 
+.banner {
+  min-height: 1000px; /* set your desired minimum height here */
+  overflow: hidden;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.visible {
-  opacity: 1;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-}
-html, body {
-  scroll-behavior: smooth;
-  touch-action: manipulation;
-}
+
 
 
 /************ Skills Css ************/
