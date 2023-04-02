@@ -319,13 +319,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .animate {
   opacity: 0;
 }
-
-.visible {
-  opacity: 1;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -333,6 +326,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   to {
     opacity: 1;
   }
+}
+.visible {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+html, body {
+  scroll-behavior: smooth;
+  touch-action: manipulation;
 }
 
 
