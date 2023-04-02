@@ -105,7 +105,7 @@ export const Banner = () => {
   
   return (
     <section className="banner" id="home" ref={bannerRef}>
-      <Container style={{ maxWidth: "1400px", margin: "0 auto" }}>
+      <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
