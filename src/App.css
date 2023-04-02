@@ -310,10 +310,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /* .isVisible { 
   will-change: transform;
-}
+} */
 .txt-rotate {
   will-change: transform;
-} */
+  overflow: hidden;
+}
 
 /************ Skills Css ************/
 .skill {
