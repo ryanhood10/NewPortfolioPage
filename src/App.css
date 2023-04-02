@@ -311,10 +311,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* .isVisible { 
   will-change: transform;
 } */
-.txt-rotate {
+/* .txt-rotate {
   will-change: transform;
   overflow: hidden;
+} */
+
+.animate {
+  opacity: 0;
 }
+
+.visible {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 /************ Skills Css ************/
 .skill {

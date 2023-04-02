@@ -24,6 +24,7 @@ export const Banner = () => {
 
     return () => { clearInterval(ticker) };
   }, [text])
+  
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -49,7 +50,38 @@ export const Banner = () => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
-
+  function isElementVisible(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+  
+  window.addEventListener('scroll', function() {
+    const elements = document.querySelectorAll('.animate');
+    elements.forEach(function(element) {
+      if (isElementVisible(element)) {
+        element.classList.add('visible');
+      } else {
+        element.classList.remove('visible');
+      }
+    });
+  });
+  
+  window.addEventListener('resize', function() {
+    const elements = document.querySelectorAll('.animate');
+    elements.forEach(function(element) {
+      if (isElementVisible(element)) {
+        element.classList.add('visible');
+      } else {
+        element.classList.remove('visible');
+      }
+    });
+  });
+  
   return (
     <section className="banner" id="home">
       <Container>
