@@ -60,6 +60,9 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
+                <br></br>
+                <br></br>
+                <br></br>
                 <h1>{`Hi! I'm Munqiz Minhas `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ " Aspiring Data Analyst", "Software Developer", "ML/AI Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Data Analyst with a certificate in Fintech from Arizona State University and skilled in Python,
                     Pandas, and Machine Learning. Proven technical and leadership aptitude in data analysis and
