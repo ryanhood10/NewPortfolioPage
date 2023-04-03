@@ -73,6 +73,7 @@ export const Banner = () => {
                     <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
                     <button className="resume-btn">Resume <ArrowRightCircle size={25} /></button>
                     </a>
+                <br></br>
               </div>}
             </TrackVisibility>
           </Col>
