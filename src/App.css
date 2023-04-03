@@ -311,6 +311,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 50px;
     margin-bottom: 50px;
   }
+  .banner .tagline {
+    margin-top: 35px;
+  }
 }
 
 @keyframes updown {
