@@ -315,7 +315,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-top: -65px;
   }
 }
-
+@media screen and (min-width: 768px), screen and (max-height: 1024px){
+  .banner h1 {
+    font-size: 65px;
+    margin-bottom: 50px;
+  }
+  .banner .tagline {
+    margin-top: -65px;
+  }
+}
+/* TO:DO ADD ADJUST SITE FOR A LARGER SCREEN SIZE (SUCH AS iMAC Computers) */
+/* @media screen and (min-width: 1280px) {
+  .banner h1 {
+    font-size: 100px;
+    margin-bottom: 100px;
+  }
+  .banner .tagline {
+    margin-top: -50px;
+  }
+} */
 
 @keyframes updown {
     0% {
