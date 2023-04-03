@@ -319,7 +319,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @media screen and (max-width: 768px) {
   .banner h1 {
-    font-size: 35px;
+    font-size: 50px;
   }
 }
 /************ Skills Css ************/
