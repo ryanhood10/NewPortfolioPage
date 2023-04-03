@@ -259,6 +259,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
 }
 .banner h1 {
+  position:relative;
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -266,7 +267,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
   height:180px;
-  
+  z-index: 999;
 }
 
 .banner p {
@@ -275,12 +276,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  z-index: 999;
 }
-/* @media only screen and (max-width: 767px) {
-  .banner p {
-    height: auto;
-  }
-} */
+
 .banner button {
   color: #fff;
   font-weight: 700;
@@ -318,14 +316,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .txt-rotate {
     height: auto;
   }
   .banner {
     height: auto;
   }
-}
+} */
 
 /************ Skills Css ************/
 .skill {
