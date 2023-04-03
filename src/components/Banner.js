@@ -53,7 +53,7 @@ export const Banner = () => {
   
   return (
     <section className="banner" id="home">
-      <Container style={{ minHeight: "600px", margin: "0 auto" }}>
+      <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
@@ -63,7 +63,7 @@ export const Banner = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-                <h1>{`Hi! I'm Munqiz Minhas `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ " Aspiring Data Analyst", "Software Developer", "ML/AI Developer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1> {`Hi! I'm Munqiz Minhas `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ " Aspiring Data Analyst", "Software Developer", "ML/AI Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Data Analyst with a certificate in Fintech from Arizona State University and skilled in Python,
                     Pandas, and Machine Learning. Proven technical and leadership aptitude in data analysis and
                     financial modeling and forecasting. Qualifications encompass collaborating across teams to
