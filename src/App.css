@@ -315,7 +315,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-top: -65px;
   }
 }
-@media screen and (min-width: 768px), screen and (max-height: 1024px){
+@media screen and (min-width: 400px), screen and (max-height: 900px){
   .banner h1 {
     font-size: 65px;
     margin-bottom: 50px;
