@@ -319,11 +319,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @media screen and (max-width: 768px) {
   .banner h1 {
-    font-size: 24px;
-  }
-  .txt-rotate {
-    position: relative;
-    top: 50px;
+    font-size: 35px;
   }
 }
 /************ Skills Css ************/
