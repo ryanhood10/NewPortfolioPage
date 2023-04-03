@@ -306,7 +306,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: updown 3s linear infinite;
 }
 
-@media screen and (max-width: 768px), screen and (max-height: 1024px){
+@media screen and (max-width: 768px){
   .banner h1 {
     font-size: 50px;
     margin-bottom: 50px;
