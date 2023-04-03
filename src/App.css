@@ -269,10 +269,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
 }
 
-h1 { 
-  height:300px;
-}
-
 .banner p {
   color: #B8B8B8;
   font-size: 18px;
@@ -320,6 +316,7 @@ h1 {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+  height:180px;
 }
 
 /************ Skills Css ************/
