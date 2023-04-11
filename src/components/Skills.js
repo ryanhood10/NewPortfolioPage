@@ -35,7 +35,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Technical skillset includes proficiency in Git/GitHub, Python, and relevant libraries such as Pandas, hvPlot, geoViews, and APIs. Experience in database management using PostgreSQL and AWS services such as Lambda, Lex, SageMaker, and S3, as well as expertise in Exploratory Data Analysis, Machine Learning, and Blockchain/CryptoCurrency technologies.</p>
+                        <p>Technical skillset includes proficiency in Git/GitHub, Python, and relevant libraries such as Pandas, NumPy, SciPy, etc. Experience in database management using PostgreSQL and AWS services such as Lambda, Lex, SageMaker, and S3, as well as expertise in Exploratory Data Analysis, Machine Learning and API Integrations.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
