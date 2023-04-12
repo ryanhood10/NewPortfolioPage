@@ -70,8 +70,8 @@ export const Banner = () => {
                     define needs, evaluate risks and issues, and implement solutions. Enjoys leveraging background
                     and skill set to support detailed and efficient analysis.
                     </p>
-                    <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
-                    <button className="resume-btn">Resume <ArrowRightCircle size={25} /></button>
+                    <a href="/Resume.pdf#zoom=125" target="_blank" rel="noopener noreferrer">
+                    <button className="resume-btn" >Resume <ArrowRightCircle size={25} /></button>
                     </a>
                 <br></br>
               </div>}
