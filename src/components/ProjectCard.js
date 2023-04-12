@@ -54,8 +54,8 @@ export const ProjectCard = ({ title, description, imgUrl, githubLink }) => {
         >
           <img src={imgUrl} />
           <div className="proj-txtx">
-            <h4 style={{ color: isHovered ? "white" : "black" }}>{title}</h4>
-            <span style={{ color: isHovered ? "white" : "black" }}>
+            <h4 style={{ color: isHovered ? "white" : "white" }}>{title}</h4>
+            <span style={{ color: isHovered ? "white" : "white" }}>
               {description}
             </span>
           </div>
