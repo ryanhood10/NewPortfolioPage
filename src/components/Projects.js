@@ -88,7 +88,6 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <br></br>
                     <Tab.Pane eventKey="second">
                       <Row>
                         {
@@ -103,8 +102,6 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <br></br>
-                    <br></br>
                   </Tab.Content>
                 </Tab.Container>
               </div>}
@@ -112,6 +109,10 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
   )
