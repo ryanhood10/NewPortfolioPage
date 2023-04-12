@@ -451,8 +451,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
 }
-.project .nav.nav-pills .nav-link:hover {
-  color: white !important;
+.project .nav.nav-pills .nav-link:hover + .description {
+  color: white;
 }
 
 /* @media only screen and (max-width: 768px) {
