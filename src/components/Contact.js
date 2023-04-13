@@ -5,43 +5,43 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Contact = () => {
-  const formInitialDetails = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    message: ''
-  }
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
+  // const formInitialDetails = {
+  //   firstName: '',
+  //   lastName: '',
+  //   email: '',
+  //   phone: '',
+  //   message: ''
+  // }
+  // const [formDetails, setFormDetails] = useState(formInitialDetails);
+  // const [buttonText, setButtonText] = useState('Send');
+  // const [status, setStatus] = useState({});
 
-  const onFormUpdate = (category, value) => {
-      setFormDetails({
-        ...formDetails,
-        [category]: value
-      })
-  }
+  // const onFormUpdate = (category, value) => {
+  //     setFormDetails({
+  //       ...formDetails,
+  //       [category]: value
+  //     })
+  // }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
-    } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-    }
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setButtonText("Sending...");
+  //   let response = await fetch("http://localhost:3000/contact", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json;charset=utf-8",
+  //     },
+  //     body: JSON.stringify(formDetails),
+  //   });
+  //   setButtonText("Send");
+  //   let result = await response.json();
+  //   setFormDetails(formInitialDetails);
+  //   if (result.code == 200) {
+  //     setStatus({ succes: true, message: 'Message sent successfully'});
+  //   } else {
+  //     setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+  //   }
+  // };
 
   return (
     <section className="contact" id="connect">
@@ -59,7 +59,13 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
-                <form onSubmit={handleSubmit}>
+                <br></br>
+                <div className="get-in-touch">
+                <h3> <a href="mailto:minhasmunqiz@gmail.com"> minhasmunqiz@gmail.com</a></h3> 
+                <br></br>
+                <h3> <a href="tel:+14804630039"> (+1) 480-463-0039</a></h3> 
+                </div>
+                {/* <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
                       <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
@@ -84,7 +90,7 @@ export const Contact = () => {
                       </Col>
                     }
                   </Row>
-                </form>
+                </form> */}
               </div>}
             </TrackVisibility>
           </Col>
