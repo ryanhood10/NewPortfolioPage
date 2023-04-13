@@ -42,8 +42,8 @@ export const Projects = () => {
     },
     {
       title: "Project 5",
-      description: "Forecasting Net Prophet",
-      githubLink: "https://github.com/Mun-Min/Forecasting_Net_Prophet",
+      description: "PyChain Ledger",
+      githubLink: "https://github.com/Mun-Min/PyChain_Ledger",
       imgUrl: projImg5,
     },
     {
