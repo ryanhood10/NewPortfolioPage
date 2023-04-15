@@ -38,16 +38,28 @@ export const Skills = () => {
                         <p>Technical skillset includes proficiency in Git/GitHub, Python, and relevant libraries such as Pandas, NumPy, SciPy, etc. Experience in database management using PostgreSQL and AWS services such as Lambda, Lex, SageMaker, and S3, as well as expertise in Exploratory Data Analysis, Machine Learning and API Integrations.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter3} alt="Image" />
                                 <h5>Python</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="Image" />
+                                <h5>Pandas</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>Machine Learning</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image" />
+                                <h5>DataBase Management</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image" />
+                                <h5>Software Development</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
                                 <h5>Cloud Computing</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Software Development</h5>
                             </div>
                         </Carousel>
                     </div>
