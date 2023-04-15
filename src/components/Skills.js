@@ -50,6 +50,10 @@ export const Skills = () => {
                                 <h5>Machine Learning</h5>
                             </div>
                             <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>API Integrations</h5>
+                            </div>
+                            <div className="item">
                                 <img src={meter2} alt="Image" />
                                 <h5>DataBase Management</h5>
                             </div>
