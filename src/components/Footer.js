@@ -17,7 +17,7 @@ export const Footer = () => {
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
               <br></br>
-            <a href="https://www.linkedin.com/in/munqiz-minhas"><img src={navIcon1} alt="" /></a>
+            <a href="https://www.linkedin.com/in/m-s-m/"><img src={navIcon1} alt="" /></a>
               <a href="https://github.com/Mun-Min"><img src={navIcon2} alt="" /></a>
             </div>
             <p>Copyright 2023. All Rights Reserved</p>
