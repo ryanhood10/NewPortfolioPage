@@ -250,7 +250,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @media screen and (max-width: 768px){
   .banner {
-    padding: 100px 0 100px 0;
+    margin-bottom: 80px;
 
   }
 }
