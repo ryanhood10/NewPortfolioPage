@@ -319,6 +319,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .banner .tagline {
     margin-top: -65px;
   }
+  .banner img {
+    animation: updown 3s linear infinite;
+    margin-top: 50px; 
+  }
 }
 @media screen and (min-width: 900px) {
   .banner h1 {
