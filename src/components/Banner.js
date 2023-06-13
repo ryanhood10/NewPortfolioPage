@@ -14,7 +14,7 @@ export const Banner = () => {
   // const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [delta, setDelta] = useState(160); // set delta to a constant value
   const [index, setIndex] = useState(1);
-  const toRotate = [ " Aspiring Data Analyst", "Software Developer", "ML/AI Developer" ];
+  const toRotate = ["Creative Web Developer", "Software Developer", "Database Engineer" ];
   const period = 900;
 
   useEffect(() => {
@@ -63,12 +63,17 @@ export const Banner = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-                <h1> {`Hi! I'm Munqiz Minhas `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ " Aspiring Data Analyst", "Software Developer", "ML/AI Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Data Analyst with a certificate in Fintech from Arizona State University and skilled in Python,
-                    Pandas, and Machine Learning. Proven technical and leadership aptitude in data analysis and
-                    financial modeling and forecasting. Qualifications encompass collaborating across teams to
-                    define needs, evaluate risks and issues, and implement solutions. Enjoys leveraging background
-                    and skill set to support detailed and efficient analysis.
+                <h1> {`👋Hi! I'm Ryan Hood `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Software Developer", "Database Engineer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>⭐ Software Developer with a certificate in Full-Stack Web Development from Vanderbilt University and skilled in Javascript, 
+                    Python, AI and Databases.  I have hands-on experience with REST APIs, AI API calls, MongoDB, Express, React, and Node.js.⭐
+                    <br></br>
+                    🌱 My continuous learning journey includes various platforms like YouTube, Udemy, iTalki, Meta and Google Certification, as well as other online courses that help me stay up-to-date with the latest technologies.
+                    <br></br>
+                    🌱 When I'm not coding, you can find me hiking, learning Spanish, trading crypto, or playing basketball with friends.
+                    <br></br>
+                    <br></br>
+                    📫 You can find my contact information in my Resume, or send me an email through the Contact Form.
+                    
                     </p>
                     <a href="/Resume.pdf#zoom=125" target="_blank" rel="noopener noreferrer">
                     <button className="resume-btn" >Resume <ArrowRightCircle size={25} /></button>
