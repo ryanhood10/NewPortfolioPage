@@ -246,6 +246,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
@@ -650,6 +651,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
 }
+
+.rounded-input {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 300px;
+  color:#fff;
+  text-emphasis-color: white;
+  background-color: #ad6abd; /* Light purple color */
+}
+
+.rounded-textarea {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  height: 150px;
+  width: 300px; /* Adjust the height as per your preference */
+  color: #fff;
+  background-color: #ad6abd; /* Light purple color */
+}
+
 
 /************ Footer Css ************/
 .footer {

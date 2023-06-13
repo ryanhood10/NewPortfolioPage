@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
+import DishMate2 from "../assets/img/DishMateScreenShot6.jpg";
+import projImg2 from "../assets/img/BookSearch1.jpg";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
@@ -14,21 +14,21 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Project 1",
-      description: "Impacts of the Pandemic on Phoenix Housing",
-      githubLink: "https://github.com/Mun-Min/Project_One",
-      imgUrl: projImg1,
+      title: "DishMate",
+      description: "Personal Chef's assistant powered by ChatGPT",
+      githubLink: "https://dish-mate.herokuapp.com/",
+      imgUrl: DishMate2,
     },
     {
-      title: "Project 2",
-      description: "Developing an Investment Portfolio via ChatBot",
-      githubLink: "https://github.com/Mun-Min/Project_3",
+      title: "Book Search Application",
+      description: "Save a reading list to your user data",
+      githubLink: "https://search4booksapplication.herokuapp.com/",
       imgUrl: projImg2,
     },
     {
-      title: "Project 3",
-      description: "Stock Data Fetcher",
-      githubLink: "https://github.com/Mun-Min/Stock_Data_Fetcher",
+      title: "React Landing Page",
+      description: 'Website for a youth basketball team',
+      githubLink: "https://tnheat.herokuapp.com",
       imgUrl: projImg3,
     },
   ];
