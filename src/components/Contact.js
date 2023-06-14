@@ -6,7 +6,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { validateEmail } from '../utils/validators';
 
-function Contact() {
+export function Contact() {
   // Set up state for form data and errors
   const [formData, setFormData] = useState({
     name: '',
