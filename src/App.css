@@ -255,7 +255,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .navbar-logo {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   nav.navbar .navbar-nav {
@@ -860,6 +860,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 0 5px;
   }
   .navbar-logo{
-    font-size:xx-small;
+    font-size:x-small;
   }
 }

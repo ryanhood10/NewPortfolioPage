@@ -67,12 +67,14 @@ export const Banner = () => {
                   <p>⭐ Software Developer with a certificate in Full-Stack Web Development from Vanderbilt University and skilled in Javascript, 
                     Python, AI and Databases.  I have hands-on experience with REST APIs, AI API calls, MongoDB, Express, React, and Node.js.⭐
                     <br></br>
-                    🌱 My continuous learning journey includes various platforms like YouTube, Udemy, iTalki, Meta and Google Certification, as well as other online courses that help me stay up-to-date with the latest technologies.
+                    <br></br>
+                    🌱 I believe the integration of technology into everyday business is a key driver for growth and advancement.
+                    <br></br>
                     <br></br>
                     🌱 When I'm not coding, you can find me hiking, learning Spanish, trading crypto, or playing basketball with friends.
                     <br></br>
                     <br></br>
-                    📫 You can find my contact information in my Resume, or send me an email through the Contact Form.
+                    📫 You can find my contact information in my Resume, or send me an email through the Contact Form. 📫
                     
                     </p>
                     <a href="/Resume.pdf#zoom=125" target="_blank" rel="noopener noreferrer">
