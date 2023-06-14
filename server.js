@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Send email endpoint
-app.post('/contact', async (req, res) => {
+app.post('/', async (req, res) => {
   try {
     const { name, email, message } = req.body;
 
