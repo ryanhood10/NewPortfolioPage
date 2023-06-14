@@ -1,52 +1,58 @@
-const express = require("express");
-const router = express.Router();
-const cors = require("cors");
-const nodemailer = require("nodemailer");
+const express = require('express');
+const cors = require('cors');
+const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
+const path = require('path');
 
-// server used to send send emails
 const app = express();
+const PORT = process.env.PORT || 3001;
+
+// Load environment variables from .env file
+dotenv.config();
+
+// Middleware
 app.use(cors());
 app.use(express.json());
-app.use("/", router);
-app.listen(3000, () => console.log("Server Running"));
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASS);
 
-const contactEmail = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: "**************@gmail.com",
-    pass: ""
-  },
-});
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, '../build')));
 
-contactEmail.verify((error) => {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log("Ready to Send");
+// Send email endpoint
+app.post('/contact', async (req, res) => {
+  try {
+    const { name, email, message } = req.body;
+
+    let transporter = nodemailer.createTransport({
+      service: 'yahoo',
+      auth: {
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD,
+      },
+    });
+
+    const mailOptions = {
+      from: process.env.EMAIL,
+      to: 'ryanhood4@yahoo.com',
+      subject: 'Contact Form Message',
+      text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
+    };
+
+    await transporter.sendMail(mailOptions);
+
+    res.status(200).json({ message: 'Email sent successfully!' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Failed to send email.' });
   }
 });
 
-router.post("/contact", (req, res) => {
-  const name = req.body.firstName + req.body.lastName;
-  const email = req.body.email;
-  const message = req.body.message;
-  const phone = req.body.phone;
-  const mail = {
-    from: name,
-    to: "ryanhood4@yahoo.com",
-    subject: "Contact Form Submission - Portfolio",
-    html: `<p>Name: ${name}</p>
-           <p>Email: ${email}</p>
-           <p>Phone: ${phone}</p>
-           <p>Message: ${message}</p>`,
-  };
-  contactEmail.sendMail(mail, (error) => {
-    if (error) {
-      res.json(error);
-    } else {
-      res.json({ code: 200, status: "Message Sent" });
-    }
-  });
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './build/index.html'));
+});
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
