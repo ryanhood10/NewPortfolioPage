@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../build')));
+app.use(express.static(path.join(__dirname, 'build')));
 
 // Send email endpoint
 app.post('/contact', async (req, res) => {
