@@ -1,14 +1,15 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import DishMate2 from "../assets/img/DishMateScreenShot6.jpg";
-import projImg2 from "../assets/img/BookSearch1.jpg";
-import projImg3 from "../assets/img/project-img3.png";
-import projImg4 from "../assets/img/project-img4.png";
-import projImg5 from "../assets/img/project-img5.png";
-import projImg6 from "../assets/img/project-img6.png";
+import DishMate from "../assets/img/DishMateScreenShot6.jpg";
+import BookSearch from "../assets/img/BookSearch1.jpg";
+import Basketball from "../assets/img/BasketballPage.jpg";
+import projImg4 from "../assets/img/ProjectPilot1.jpg";
+import projImg5 from "../assets/img/WOTS2.png";
+import projImg6 from "../assets/img/WeatherForecast2.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { Basket } from "react-bootstrap-icons";
 
 export const Projects = () => {
 
@@ -17,39 +18,39 @@ export const Projects = () => {
       title: "DishMate",
       description: "Personal Chef's assistant powered by ChatGPT",
       githubLink: "https://dish-mate.herokuapp.com/",
-      imgUrl: DishMate2,
+      imgUrl: DishMate,
     },
     {
       title: "Book Search Application",
       description: "Save a reading list to your user data",
       githubLink: "https://search4booksapplication.herokuapp.com/",
-      imgUrl: projImg2,
+      imgUrl: BookSearch,
     },
     {
       title: "React Landing Page",
       description: 'Website for a youth basketball team',
       githubLink: "https://tnheat.herokuapp.com",
-      imgUrl: projImg3,
+      imgUrl: Basketball,
     },
   ];
 
   const projects_tab_2 = [
     {
-      title: "Project 4",
-      description: "Crypto Currency FOMO (Fear-of-Missing-Out) Calculator",
-      githubLink: "https://github.com/Mun-Min/Crypto_FOMO_Calculator",
+      title: "Project Pilot",
+      description: "Project Manager Application written with Handlebars",
+      githubLink: "https://floating-bayou-84303.herokuapp.com/login",
       imgUrl: projImg4,
     },
     {
-      title: "Project 5",
-      description: "PyChain Ledger",
-      githubLink: "https://github.com/Mun-Min/PyChain_Ledger",
+      title: "Social Media Application",
+      description: "MERN Stack Social Chatroom",
+      githubLink: "https://github.com/JuanMullert/WOTS_PROJECT",
       imgUrl: projImg5,
     },
     {
-      title: "Project 6",
-      description: "Machine Learning Trading Bot",
-      githubLink: "https://github.com/Mun-Min/ML_Trading_Bot",
+      title: "Weather Dashboard",
+      description: "Weather API with custom icons for each temperate",
+      githubLink: "https://ryanhood10.github.io/Module6Challenge/",
       imgUrl: projImg6,
     },
   ];
@@ -63,7 +64,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>A collection of projects that serves as a demonstration of technical skills and experience, providing potential clients or employers an overview of the showcased work.</p>
+                <p>A collection of projects that serves as a demonstration of technical skills and experience, providing potential clients or employers an overview of my showcased work.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

@@ -65,6 +65,22 @@ export const Contact = () => {
                   <h2>Get In Touch</h2>
                   <br></br>
                   <div className="get-in-touch">
+                  <div>
+                      <p  style={{ color: 'white' }}>Name:</p>
+                      <input
+                        type="name"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        required
+                        className="rounded-input"
+                        style={{ color: 'white' }}
+
+                      />
+                      {errors.name && <span className="error">{errors.name}</span>}
+                    </div>
                     <div>
                       <p  style={{ color: 'white' }}>Email:</p>
                       <input
@@ -91,12 +107,12 @@ export const Contact = () => {
                         onChange={handleInputChange}
                         required
                         className="rounded-textarea"
-                        style={{ color: 'white' }}
+                          style={{ color: 'white' }}
 
                       ></textarea>
                       {errors.message && <span className="error">{errors.message}</span>}
                     </div>
-                    <button type="submit" onClick={handleSubmit}>Send</button>
+                    <button className="EmailButton" type="submit" onClick={handleSubmit}>Send</button>
                   </div>
                 </div>
               }

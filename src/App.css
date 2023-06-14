@@ -670,15 +670,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #ad6abd; /* Light purple color */
 }
 
+.EmailButton{
+  background-color: #4A2FBD; /* Purple background */
+  color: #FFFFFF; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.EmailButton:hover {
+  background-color: #6E4CD2; /* Darker purple background on hover */
+}
+
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust the height as needed */
+  padding: 20px;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
 /* .newsletter-bx {
   background: #FFFFFF;
   border-radius: 55px;

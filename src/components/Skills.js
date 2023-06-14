@@ -35,35 +35,39 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Technical skillset includes proficiency in Git/GitHub, Python, and relevant libraries such as Pandas, NumPy, SciPy, etc. Experience in database management using PostgreSQL and AWS services such as Lambda, Lex, SageMaker, and S3, as well as expertise in Exploratory Data Analysis, Machine Learning and API Integrations.</p>
+                        <p>I am a Full-Stack developer with proficiency in Git/GitHub, JavasScript, Python, relevant libraries such as React and Handlebars, development with MERN stack, integrating AI and APIs, and hands-on experience in database management using SQL and MongoDB.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Python</h5>
+                                <h5>JavaScript</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Pandas</h5>
+                                <h5>MERN stack</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Machine Learning</h5>
+                                <h5>SQL</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>API Integrations</h5>
+                                <h5>React</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>REST APIs</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>DataBase Management</h5>
+                                <h5>MongoDB</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Software Development</h5>
+                                <img src={meter3} alt="Image" />
+                                <h5>AI integration</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Cloud Computing</h5>
+                                <img src={meter1} alt="Image" />
+                                <h5>NodeJS</h5>
                             </div>
                         </Carousel>
                     </div>
