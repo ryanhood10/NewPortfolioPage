@@ -6,7 +6,8 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { validateEmail } from '../utils/validators';
 
-export const Contact = () => {
+function Contact() {
+  // Set up state for form data and errors
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,6 +15,7 @@ export const Contact = () => {
   });
   const [errors, setErrors] = useState({});
 
+  // Handle input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     const updatedErrors = { ...errors, [name]: value.trim() === '' ? 'Input is required.' : null };
@@ -21,6 +23,7 @@ export const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = Object.keys(formData).reduce((acc, key) => {
@@ -40,7 +43,7 @@ export const Contact = () => {
           email: formData.email,
           message: formData.message,
         };
-        const response = await axios.post('https://ryans-portfolio.herokuapp.com', emailData);
+        const response = await axios.post('https://ryans-portfolio.herokuapp.com/contact', emailData);
         alert(response.data.message);
       } catch (error) {
         console.error(error);
@@ -64,57 +67,37 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <form onSubmit={handleSubmit}>
-                    <h2>Get In Touch</h2>
-                    <br></br>
-                    <div className="get-in-touch">
-                      <div>
-                        <p style={{ color: 'white' }}>Name:</p>
-                        <input
-                          type="name"
-                          id="name"
-                          name="name"
-                          placeholder="Your Name"
-                          value={formData.name}
-                          onChange={handleInputChange}
-                          required
-                          className="rounded-input"
-                          style={{ color: 'white' }}
-                        />
-                        {errors.name && <span className="error">{errors.name}</span>}
-                      </div>
-                      <div>
-                        <p style={{ color: 'white' }}>Email:</p>
-                        <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          placeholder="Email Address"
-                          value={formData.email}
-                          onChange={handleInputChange}
-                          required
-                          className="rounded-input"
-                          style={{ color: 'white' }}
-                        />
-                        {errors.email && <span className="error">{errors.email}</span>}
-                      </div>
-                      <div>
-                        <p style={{ color: 'white' }}>Message:</p>
-                        <textarea
-                          placeholder="Message"
-                          name="message"
-                          id="message"
-                          value={formData.message}
-                          onChange={handleInputChange}
-                          required
-                          className="rounded-textarea"
-                          style={{ color: 'white' }}
-                        ></textarea>
-                        {errors.message && <span className="error">{errors.message}</span>}
-                      </div>
-                      <button className="EmailButton" type="submit">Send</button>
-                    </div>
-                  </form>
+                  <form className="contact-form" onSubmit={handleSubmit}>
+      <h2>Contact</h2>
+      {['name', 'email', 'message'].map((field) => (
+        <div key={field}>
+          <p>{field[0].toUpperCase() + field.slice(1)}:</p>
+          {field !== 'message' ? (
+            <input
+              type={field === 'email' ? 'email' : 'text'}
+              id={field}
+              name={field}
+              placeholder={field[0].toUpperCase() + field.slice(1)}
+              className={`${field}-input`}
+              value={formData[field]}
+              onChange={handleInputChange}
+              required
+            />
+          ) : (
+            <textarea
+              placeholder="Message"
+              name="message"
+              id="message"
+              value={formData.message}
+              onChange={handleInputChange}
+              required
+            ></textarea>
+          )}
+          {errors[field] && <span className="error">{errors[field]}</span>}
+        </div>
+      ))}
+      <button type="submit">Send</button>
+    </form>
                 </div>
               }
             </TrackVisibility>
