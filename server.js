@@ -45,7 +45,7 @@ app.post('/contact', async (req, res) => {
     res.status(500).json({ message: 'Failed to send email.' });
   }
 });
-
+//
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('*', (req, res) => {
