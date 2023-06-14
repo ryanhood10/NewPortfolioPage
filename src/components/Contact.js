@@ -43,7 +43,7 @@ export function Contact() {
           email: formData.email,
           message: formData.message,
         };
-        const response = await axios.post('https://ryans-portfolio.herokuapp.com/contact', emailData);
+        const response = await axios.post('https://ryans-portfolio.herokuapp.com', emailData);
         alert(response.data.message);
       } catch (error) {
         console.error(error);
