@@ -1,1 +1,1 @@
-web: node personal-portolio/server.js
+web: node personal-portfolio/server.js
