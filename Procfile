@@ -1,1 +1,1 @@
-web: node ryans-portfolio/server.js
+web: node server.js
