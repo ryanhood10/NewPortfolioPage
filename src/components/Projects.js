@@ -16,19 +16,19 @@ export const Projects = () => {
   const projects = [
     {
       title: "DishMate",
-      description: "Personal Chef's assistant powered by ChatGPT",
+      description: "Personal Chef's assistant powered by ChatGPT. Created using React, Javascript and Nodejs. Search and Save premade recipes, as well has have ChatGPT generate a recipe based off of your ingredients.",
       githubLink: "https://dish-mate.herokuapp.com/",
       imgUrl: DishMate,
     },
     {
       title: "Book Search Application",
-      description: "Save a reading list to your user data",
+      description: "Save and Search Google Books API to save to your user data. GraphQL API built with Apollo Server. This app was built using MERN stack- using React, APIs, MongoDB and Nodejs.",
       githubLink: "https://search4booksapplication.herokuapp.com/",
       imgUrl: BookSearch,
     },
     {
       title: "React Landing Page",
-      description: 'Website for a youth basketball team',
+      description: 'Website for a youth basketball team. This is a basic React landing page that uses Nodejs and NodeMailer.',
       githubLink: "https://tnheat.herokuapp.com",
       imgUrl: Basketball,
     },
@@ -37,19 +37,19 @@ export const Projects = () => {
   const projects_tab_2 = [
     {
       title: "Project Pilot",
-      description: "Project Manager Application written with Handlebars",
+      description: "Project Manager Application written with Handlebars, MySQL, Nodejs and Express.",
       githubLink: "https://floating-bayou-84303.herokuapp.com/login",
       imgUrl: projImg4,
     },
     {
       title: "Social Media Application",
-      description: "MERN Stack Social Chatroom",
+      description: "Social Chatroom- this application was built using MERN stack. It was built with an express server, React library, and MongoDB.",
       githubLink: "https://github.com/JuanMullert/WOTS_PROJECT",
       imgUrl: projImg5,
     },
     {
       title: "Weather Dashboard",
-      description: "Weather API with custom icons for each temperate",
+      description: "Weather API with custom icons for each temperate. This project was written solely in javascript and is using an API call.",
       githubLink: "https://ryanhood10.github.io/Module6Challenge/",
       imgUrl: projImg6,
     },

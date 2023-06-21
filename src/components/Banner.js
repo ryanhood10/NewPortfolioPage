@@ -14,7 +14,7 @@ export const Banner = () => {
   // const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [delta, setDelta] = useState(160); // set delta to a constant value
   const [index, setIndex] = useState(1);
-  const toRotate = ["Creative Web Developer", "Software Developer", "Database Engineer" ];
+  const toRotate = ["Creative Web Developer", "Software Developer", "Database Engineer" ]; 
   const period = 900;
 
   useEffect(() => {
