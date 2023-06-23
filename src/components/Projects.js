@@ -6,6 +6,7 @@ import Basketball from "../assets/img/BasketballPage.jpg";
 import projImg4 from "../assets/img/ProjectPilot1.jpg";
 import projImg5 from "../assets/img/WOTS2.png";
 import projImg6 from "../assets/img/WeatherForecast2.png";
+import coverLetter from "../assets/img/CoverLetterGenerator.jpg"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -54,6 +55,14 @@ export const Projects = () => {
       imgUrl: projImg6,
     },
   ];
+  const projects_tab_3 = [
+    {
+      title: "Cover Letter Generator",
+      description: "Prompts ChatGPT to generate a Cover Letter for a job application. This project uses React, Nodejs, and calls ChatGPT's AI",
+      githubLink: "https://chatgptcoverlettergenerator-cc800c0692c1.herokuapp.com/",
+      imgUrl: coverLetter,
+    },
+  ]
 
   return (
     <section className="project" id="projects">
@@ -72,6 +81,9 @@ export const Projects = () => {
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -93,6 +105,20 @@ export const Projects = () => {
                       <Row>
                         {
                           projects_tab_2.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="third">
+                      <Row>
+                        {
+                          projects_tab_3.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
