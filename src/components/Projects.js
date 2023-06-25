@@ -8,6 +8,7 @@ import projImg5 from "../assets/img/WOTS2.png";
 import projImg6 from "../assets/img/WeatherForecast2.png";
 import coverLetter from "../assets/img/CoverLetterGenerator.jpg"
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import chatgpt from "../assets/img/ChatGPTClone.jpg"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { Basket } from "react-bootstrap-icons";
@@ -61,6 +62,12 @@ export const Projects = () => {
       description: "Prompts ChatGPT to generate a Cover Letter for a job application. This project uses React, Nodejs, and calls ChatGPT's AI",
       githubLink: "https://chatgptcoverlettergenerator-cc800c0692c1.herokuapp.com/",
       imgUrl: coverLetter,
+    },
+    {
+      title: "ChatGPT Clone",
+      description: "This project is a clone of ChatGPT built with React, Nodejs, and OpenAI's API. -still needs some styling to be done",
+      githubLink: "https://ryanschatgpt-14a492da303f.herokuapp.com/",
+      imgUrl: chatgpt,
     },
   ]
 
