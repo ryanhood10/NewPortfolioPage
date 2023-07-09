@@ -9,6 +9,7 @@ import projImg6 from "../assets/img/WeatherForecast2.png";
 import coverLetter from "../assets/img/CoverLetterGenerator.jpg"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import chatgpt from "../assets/img/ChatGPTClone.jpg"
+import employeeTracker from "../assets/img/EmployeeTracker.jpg"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { Basket } from "react-bootstrap-icons";
@@ -39,7 +40,7 @@ export const Projects = () => {
   const projects_tab_2 = [
     {
       title: "Project Pilot",
-      description: "Project Manager Application written with Handlebars, MySQL, Nodejs and Express.",
+      description: "Project Manager Application written with Handlebars, SQL database, Nodejs and Express.",
       githubLink: "https://floating-bayou-84303.herokuapp.com/login",
       imgUrl: projImg4,
     },
@@ -60,14 +61,20 @@ export const Projects = () => {
     {
       title: "Cover Letter Generator",
       description: "Prompts ChatGPT to generate a Cover Letter for a job application. This project uses React, Nodejs, and calls ChatGPT's AI",
-      githubLink: "https://chatgptcoverlettergenerator-cc800c0692c1.herokuapp.com/",
+      githubLink: "https://coverletter-generator-a3175c86342a.herokuapp.com/",
       imgUrl: coverLetter,
     },
     {
       title: "ChatGPT Clone",
-      description: "This project is a clone of ChatGPT built with React, Nodejs, and OpenAI's API. -still needs some styling to be done",
+      description: "This project is a clone of ChatGPT built with React, Nodejs, and OpenAI's API.",
       githubLink: "https://ryanschatgpt-14a492da303f.herokuapp.com/",
       imgUrl: chatgpt,
+    },
+    {
+      title: "SQL Database",
+      description: "This is my back-end database for tracking employees.",
+      githubLink: "https://github.com/ryanhood10/EmployeeManager",
+      imgUrl: employeeTracker,
     },
   ]
 
