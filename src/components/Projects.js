@@ -1,6 +1,13 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+import { Basket } from "react-bootstrap-icons";
+
+//import photos
 import DishMate from "../assets/img/DishMateScreenShot6.jpg";
+import DishMateMobile from "../assets/img/DishMateMobile5.jpg";
+import cybermart from "../assets/img/cybermart.jpg";
 import BookSearch from "../assets/img/BookSearch1.jpg";
 import Basketball from "../assets/img/BasketballPage.jpg";
 import projImg4 from "../assets/img/ProjectPilot1.jpg";
@@ -10,11 +17,11 @@ import coverLetter from "../assets/img/CoverLetterGenerator.jpg"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import chatgpt from "../assets/img/ChatGPTClone.jpg"
 import employeeTracker from "../assets/img/EmployeeTracker.jpg"
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
-import { Basket } from "react-bootstrap-icons";
+
 
 export const Projects = () => {
+
+  //project items
 
   const projects = [
     {
@@ -76,6 +83,20 @@ export const Projects = () => {
       githubLink: "https://github.com/ryanhood10/EmployeeManager",
       imgUrl: employeeTracker,
     },
+  ];
+  const projects_tab_4 = [
+    {
+      title: "DishMate Mobile",
+      description: "Mobile Application written in flutter/dart. Takes user input to prompt ChatGPT for a recipe. Click for GitHub repo",
+      githubLink: "https://github.com/ryanhood10/FlutterProject",
+      imgUrl: DishMateMobile,
+    },
+    {
+      title: "CyberMart",
+      description: "Mock online Robot store. Built with TailwindCSS, React, Nodejs, and a JSON database. All images (besides products) were generated using MidjourneyAI.",
+      githubLink: "https://cybermart-0a118a0c627e.herokuapp.com/",
+      imgUrl: cybermart,
+    }
   ]
 
   return (
@@ -98,6 +119,9 @@ export const Projects = () => {
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="fourth">Tab 4</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -133,6 +157,20 @@ export const Projects = () => {
                       <Row>
                         {
                           projects_tab_3.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="fourth">
+                      <Row>
+                        {
+                          projects_tab_4.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}

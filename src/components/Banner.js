@@ -65,13 +65,13 @@ export const Banner = () => {
                 <br></br>
                 <h1> {`👋Hi! I'm Ryan Hood `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Software Developer", "Database Engineer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>⭐ Software Developer with a certificate in Full-Stack Web Development from Vanderbilt University and skilled in Javascript, 
-                    Python, AI and Databases.  I have hands-on experience with REST APIs, AI API calls, MongoDB, Express, React, and Node.js.⭐
+                    Python, Dart/Flutter, TailwindCSS, BootstrapCSS, AI and Databases.  I have hands-on experience with REST APIs, AI API calls, MongoDB, Express, React, and Node.js.⭐
+                    <br></br>
+                    Available for hire and collaboration. Please send an email or connect with me on my Twitter or LinkedIn at the bottom of the page.
                     <br></br>
                     <br></br>
                     🌱 I believe the integration of technology into everyday business is a key driver for growth and advancement.
                     <br></br>
-                    <br></br>
-                    🌱 When I'm not coding, you can find me hiking, learning Spanish, trading crypto, or playing basketball with friends.
                     <br></br>
                     <br></br>
                     📫 You can find my contact information in my Resume, or send me an email through the Contact Form. 📫

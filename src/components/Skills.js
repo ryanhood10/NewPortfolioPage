@@ -69,6 +69,10 @@ export const Skills = () => {
                                 <img src={meter1} alt="Image" />
                                 <h5>NodeJS</h5>
                             </div>
+                            <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>TailwindCSS</h5>
+                            </div>
                         </Carousel>
                     </div>
                 </div>
