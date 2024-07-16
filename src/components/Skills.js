@@ -31,9 +31,9 @@ export const Skills = () => {
   return (
     <section className="skill" id="skills">
       <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="skill-bx wow zoomIn">
+        <div className="row ">
+          <div className="col-12 ">
+            <div className="skill-bx wow zoomIn bg-black">
               <h2>My Skills: Building Maintainable and Efficient Code</h2>
               <p>
                 I leverage Object-Oriented Programming (OOP) principles to create well-structured, reusable, and adaptable code. Here are some key OOP concepts I use:
