@@ -2,19 +2,24 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner";
+// import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { Banner2 } from "./components/Banner2";
+// import { BusinessCardComponent } from './components/BusinessCard';
+import { Graphics } from './components/Graphics'
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Banner />
-      <Skills />
+      <Banner2 />
+      <Graphics />
       <Projects />
+      <Skills />
+      {/* <Banner /> */}
       <Contact />
       <Footer />
     </div>

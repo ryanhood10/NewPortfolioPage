@@ -286,6 +286,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+.business-card {
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  padding: 12px 48px;
+  perspective: 2500px;
+  margin: 0 50px;
+  flex-direction: column; /* Adjust to make sure the card contents stack */
+
+}
+
+
+.business-card:hover .card-img {
+  transform: translateY(-40%); /* Pop out effect */
+  transition: transform 0.5s ease-in-out;}
+  
+  
+  .business-card:hover .card-contents {
+    transform: translateY(40%); /* Pop out effect */
+    transition: transform 0.5s ease-in-out;}
+  
+  
 
 
 /************ Banner Css ************/
@@ -355,6 +380,75 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   animation: updown 3s linear infinite;
 }
+
+/************ Banner2 Css ************/
+.banner2 {
+  margin-top: 0;
+  padding: 200px 0 100px 0;
+  background-image: url('./assets/img/astroBackground.webp');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner2 .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 0px;
+  display: inline-block;
+  
+}
+.banner2 h1 {
+  position:relative;
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 10px;
+  display: block;
+  height:180px;
+  z-index: 999;
+}
+
+.banner2 p {
+  color: #B8B8B8;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+  position:relative;
+  z-index: 999;
+}
+
+.banner2 button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: inline-block;
+  align-items: center;
+}
+
+.banner2 button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.banner2 button:hover svg {
+  margin-left: 25px;
+}
+
+.banner2 img {
+  animation: updown 3s linear infinite;
+}
+
 
 @media screen and (max-width: 768px){
   .banner h1 {
@@ -465,7 +559,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: dark;
 }
 .project h2 {
 	font-size: 45px;

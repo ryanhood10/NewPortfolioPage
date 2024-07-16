@@ -2,9 +2,8 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { Basket } from "react-bootstrap-icons";
 
-//import photos
+// Import photos
 import DishMate from "../assets/img/DishMateScreenShot6.jpg";
 import DishMateMobile from "../assets/img/DishMateMobile5.jpg";
 import cybermart from "../assets/img/cybermart.jpg";
@@ -13,16 +12,16 @@ import Basketball from "../assets/img/BasketballPage.jpg";
 import projImg4 from "../assets/img/ProjectPilot1.jpg";
 import projImg5 from "../assets/img/WOTS2.png";
 import projImg6 from "../assets/img/WeatherForecast2.png";
-import coverLetter from "../assets/img/CoverLetterGenerator.jpg"
+import coverLetter from "../assets/img/CoverLetterGenerator.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import chatgpt from "../assets/img/ChatGPTClone.jpg"
-import employeeTracker from "../assets/img/EmployeeTracker.jpg"
+import chatgpt from "../assets/img/ChatGPTClone.jpg";
+import employeeTracker from "../assets/img/EmployeeTracker.jpg";
+import SherlockSocial from '../assets/img/SherlockSocial2.png';
 
 
 export const Projects = () => {
 
-  //project items
-
+  // Project items
   const projects = [
     {
       title: "DishMate",
@@ -97,7 +96,15 @@ export const Projects = () => {
       githubLink: "https://cybermart-0a118a0c627e.herokuapp.com/",
       imgUrl: cybermart,
     }
-  ]
+  ];
+
+  // Define the single card for the empty div
+  const mvpProject = {
+    title: "Most Valuable Project",
+    description: "This is a full-stack project demonstrating a wide range of technologies, along with intricate data management and a robust user interface.",
+    githubLink: "https://sherlocksocial.io/",
+    imgUrl: SherlockSocial, // Replace with the appropriate image
+  };
 
   return (
     <section className="project" id="projects">
@@ -106,93 +113,93 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>A collection of projects that serves as a demonstration of technical skills and experience, providing potential clients or employers an overview of my showcased work.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="fourth">Tab 4</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>Projects</h2>
+                  <p>A collection of projects that serves as a demonstration of technical skills and experience.</p>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="fourth">Tab 4</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      <Tab.Pane eventKey="first">
+                        <Row>
+                          {projects.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
                                 {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      <Row>
-                        {
-                          projects_tab_2.map((project, index) => {
+                              />
+                            );
+                          })}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {projects_tab_2.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
                                 {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <Row>
-                        {
-                          projects_tab_3.map((project, index) => {
+                              />
+                            );
+                          })}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                        <Row>
+                          {projects_tab_3.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
                                 {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="fourth">
-                      <Row>
-                        {
-                          projects_tab_4.map((project, index) => {
+                              />
+                            );
+                          })}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="fourth">
+                        <Row>
+                          {projects_tab_4.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
                                 {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+                              />
+                            );
+                          })}
+                        </Row>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+
+                  <h2>MVP</h2>
+                  <p>My Most Valuable Project. This full-stack project demonstrates a wide arrange of technologies, along with intricate data management and a robust user interface.</p>
+                  <div className="d-flex justify-content-center">
+
+                  <ProjectCard {...mvpProject} />
+                  </div>
+                </div>
+              }
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <br />
+      <br />
+      <br />
+      <br />
+      <img className="background-image-right" src={colorSharp2} alt="Background" />
     </section>
-  )
+  );
 }

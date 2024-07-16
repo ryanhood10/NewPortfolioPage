@@ -1,16 +1,15 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/color-sharp.png";
+import Splash from '../assets/img/splash.png';
+import Pill from '../assets/img/pill4.png';
+import Recycle from '../assets/img/recycle.png';
+import Flex from '../assets/img/flex.png';
+
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -28,57 +27,44 @@ export const Skills = () => {
     }
   };
 
+
   return (
     <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>I am a Full-Stack developer with proficiency in Git/GitHub, JavasScript, Python, relevant libraries such as React and Handlebars, development with MERN stack, integrating AI and APIs, and hands-on experience in database management using SQL and MongoDB.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>JavaScript</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>MERN stack</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>SQL</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>React</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>REST APIs</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>MongoDB</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>AI integration</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>NodeJS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>TailwindCSS</h5>
-                            </div>
-                        </Carousel>
-                    </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <h2>My Skills: Building Maintainable and Efficient Code</h2>
+              <p>
+                I leverage Object-Oriented Programming (OOP) principles to create well-structured, reusable, and adaptable code. Here are some key OOP concepts I use:
+              </p>
+              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                <div className="item">
+                  <img src={Pill} alt="Encapsulation" style={{ height: "48px", width: "48px" }} />
+                  <h5>Encapsulation</h5>
+                  <p>By keeping data and methods private within classes, I ensure data security and control.</p>
                 </div>
+                <div className="item">
+                  <img src={Splash} alt="Abstraction" style={{ height: "48px", width: "48px" }} />
+                  <h5>Abstraction</h5>
+                  <p>I focus on user-facing functionalities, hiding complex implementation details for a cleaner interface.</p>
+                </div>
+                <div className="item">
+                  <img src={Recycle} alt="Inheritance" style={{ height: "48px", width: "48px" }} />
+                  <h5>Inheritance</h5>
+                  <p>I reuse existing code by creating new classes that inherit properties and behavior from parent classes.</p>
+                </div>
+                <div className="item">
+                  <img src={Flex} alt="Polymorphism" style={{ height: "48px", width: "48px" }} />
+                  <h5>Polymorphism</h5>
+                  <p>I write code that can adapt to different situations, making it more flexible and maintainable.</p>
+                </div>
+              </Carousel>
             </div>
+          </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="Background" />
     </section>
-  )
+  );
 }
