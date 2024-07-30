@@ -3,6 +3,7 @@ import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faYoutube, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
@@ -37,6 +38,11 @@ export const Footer = () => {
                     <FontAwesomeIcon icon={faLinkedin} size="2x" />
                   </a>
                 </li>
+                <li>
+                  <a href="https://akirawebsolutions.com/"> 
+                    <FontAwesomeIcon icon={faGlobe} size="2x" />
+                  </a>
+                </li>
                 {/* <li>
                   <a href="https://www.youtube.com/@DeveloperRyan">
                     <FontAwesomeIcon icon={faYoutube} size="2x" />
@@ -45,7 +51,7 @@ export const Footer = () => {
                
               </ul>
             </div>
-            <p>Find me on GitHub or LinkedIn</p>
+            <p>Find me on GitHub, LinkedIn, or check out my company's website.</p>
           </Col>
         </Row>
       </Container>
