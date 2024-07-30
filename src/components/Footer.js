@@ -15,7 +15,7 @@ export const Footer = () => {
         <Row className="align-items-center">
           <MailchimpForm />
           <Col xs={12} sm={6}>
-            <span className="navbar-logo">Connect with me online!</span>
+            <span className="navbar-logo">Connect with me!</span>
           </Col>
           <Col xs={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
@@ -27,25 +27,25 @@ export const Footer = () => {
                     <FontAwesomeIcon icon={faGithub} size="2x" />
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="https://twitter.com/DevRyanH">
                     <FontAwesomeIcon icon={faTwitter} size="2x" />
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="https://www.linkedin.com/in/ryan-hood-11aa2b239/">
                     <FontAwesomeIcon icon={faLinkedin} size="2x" />
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="https://www.youtube.com/@DeveloperRyan">
                     <FontAwesomeIcon icon={faYoutube} size="2x" />
                   </a>
-                </li>
+                </li> */}
                
               </ul>
             </div>
-            <p>Find me on these websites</p>
+            <p>Find me on GitHub or LinkedIn</p>
           </Col>
         </Row>
       </Container>

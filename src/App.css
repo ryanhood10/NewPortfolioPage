@@ -100,8 +100,9 @@ nav.navbar a.navbar-brand {
 }
 
 .navbar-logo {
-  font-family: 'Brush Script MT', cursive;
-  font-size: 3rem;
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bolder;
   color: #fff;
   text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
 }
@@ -255,7 +256,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .navbar-logo {
-    font-size: smaller;
+    font-size: x-large;
   }
 
   nav.navbar .navbar-nav {
@@ -470,17 +471,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 0px;
   display: inline-block;
-  
 }
+
 .banner2 h1 {
-  position:relative;
+  position: relative;
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 10px;
   display: block;
-  height:180px;
+  height: 180px;
   z-index: 999;
 }
 
@@ -490,7 +491,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
-  position:relative;
+  position: relative;
   z-index: 999;
 }
 
@@ -519,30 +520,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: updown 3s linear infinite;
 }
 
-
-@media screen and (max-width: 768px){
-  .banner h1 {
-    font-size: 50px;
-    margin-bottom: 50px;
+@media screen and (max-width: 768px) {
+  .banner2 h1 {
+    font-size: 40px; /* Smaller font size for mobile view */
+    margin-bottom: 20px; /* Adjust the margin as needed */
   }
-  .banner .tagline {
+  .banner2 .tagline {
     margin-top: -65px;
   }
-  .banner img {
+  .banner2 img {
     animation: updown 3s linear infinite;
-    margin-top: 50px; 
+    margin-top: 50px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .banner2 h1 {
+    font-size: 30px; /* Even smaller font size for very small mobile view */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+  .banner2 .tagline {
+    margin-top: -65px;
+  }
+  .banner2 img {
+    animation: updown 3s linear infinite;
+    margin-top: 50px;
+  }
+}
+
 @media screen and (min-width: 900px) {
-  .banner h1 {
+  .banner2 h1 {
     font-size: 60px;
     margin-bottom: 59px;
   }
-  .banner .tagline {
+  .banner2 .tagline {
     margin-top: -65px;
     margin-bottom: 25px;
   }
 }
+
 /* TO:DO ADD ADJUST SITE FOR A LARGER SCREEN SIZE (SUCH AS iMAC Computers) */
 /* @media screen and (min-width: 1280px) {
   .banner h1 {
@@ -1024,6 +1040,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 0 5px;
   }
   .navbar-logo{
-    font-size:x-small;
+    font-size:x-large;
   }
 }

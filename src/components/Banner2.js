@@ -9,7 +9,7 @@ export const Banner2 = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <div>
-            <h1 className="text-white text-3xl font-bold leading-tight">
+              <h1 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
                 Web App Development for Modern Businesses
               </h1>
               <p className="text-white text-lg mt-4">
